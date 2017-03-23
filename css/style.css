@@ -1,0 +1,9 @@
+#kontener_zewn {
+    width: 100%;
+    height: 100vh;
+}
+
+#kont_wewn {
+    position: absolute;
+    display: inline-block;
+}
