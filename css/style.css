@@ -11,10 +11,14 @@ body, html {
     font-weight: 500;
 }
 
-.section_subheader, #menu_logo, h2, h5 {
+#menu_logo, h2, h3, h5 {
     font-family: 'Droid Serif', italic;
     color: #333;
 }
+
+.section_subheader {padding-bottom: 5%;}
+
+i {color: #fff;}
 
 /*STYLE MENU*/
 #menu {
@@ -49,10 +53,10 @@ body, html {
 /*STYLE SERVICES*/
 #services {
     height: 100%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
-#services .section_subheader {padding-bottom: 10vh;}
+/*#services .section_subheader {padding-bottom: 10vh;}*/
 
 #services .services_items_icons_wrapper {
     height: 150px;
@@ -62,7 +66,6 @@ body, html {
     left: 0;
     right: 0;
     margin: auto;
-    color: #fff;
     font-size: 70px;
     padding: 25px 0;
 }
@@ -71,8 +74,58 @@ body, html {
 /*STYLE PORTFOLIO*/
 #portfolio {
     height: 100%;
-    padding-top: 10%;
+    padding-top: 5%;
+    background-color: #f7f7f7;
 }
+
+#portfolio .portfolio_item_image_wrapper {height: 400px;}
+
+#portfolio .portfolio_item_image {
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#portfolio_item_image_1 {background-image: url('../img/portfolio/chestnut_on_bracket.jpg')}
+#portfolio_item_image_2 {background-image: url('../img/portfolio/typing_on_laptop.jpg')}
+#portfolio_item_image_3 {background-image: url('../img/portfolio/child_with_blue_paint.jpg')}
+#portfolio_item_image_4 {background-image: url('../img/portfolio/chaotic_paint.jpg')}
+#portfolio_item_image_5 {background-image: url('../img/portfolio/house_with_blue_doors.jpg')}
+#portfolio_item_image_6 {background-image: url('../img/portfolio/box_of_cookies.jpg')}
+
+#portfolio .portfolio_item_mask {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(14,216,214, 0.8);
+    font-size: 2%;
+}
+
+#portfolio .portfolio_item_mask:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+#portfolio .portfolio_item_mask_content {
+    position: relative;
+    height: 100%;
+}
+
+#portfolio .portfolio_item_mask_content_inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 60px;
+}
+
+/*#portfolio i {color: #fff;}*/
 
 /*STYLE TEAM*/
 
