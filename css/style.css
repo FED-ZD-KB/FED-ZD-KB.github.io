@@ -16,6 +16,11 @@ body, html {
     color: #333;
 }
 
+header ~ section {
+    height: 100%;
+    padding-top: 5%;
+}
+
 .section_subheader {padding-bottom: 5%;}
 
 i {color: #fff;}
@@ -51,13 +56,6 @@ i {color: #fff;}
 
 
 /*STYLE SERVICES*/
-#services {
-    height: 100%;
-    padding-top: 5%;
-}
-
-/*#services .section_subheader {padding-bottom: 10vh;}*/
-
 #services .services_items_icons_wrapper {
     height: 150px;
     width: 150px;
@@ -72,11 +70,7 @@ i {color: #fff;}
 
 
 /*STYLE PORTFOLIO*/
-#portfolio {
-    height: 100%;
-    padding-top: 5%;
-    background-color: #f7f7f7;
-}
+#portfolio {background-color: #f7f7f7;}
 
 #portfolio .portfolio_item_image_wrapper {height: 400px;}
 
@@ -125,9 +119,23 @@ i {color: #fff;}
     font-size: 60px;
 }
 
-/*#portfolio i {color: #fff;}*/
 
 /*STYLE TEAM*/
+#team .team_image_wrapper {
+    height: 200px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#team #team_image_1 {background-image: url('../img/team/man-1.jpg');}
+#team #team_image_2 {background-image: url('../img/team/man-2.jpg');}
+#team #team_image_3 {background-image: url('../img/team/woman-1.jpg');}
+
 
 /*STYLE CONTACT*/
 
