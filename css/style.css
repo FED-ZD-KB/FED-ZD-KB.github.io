@@ -1,0 +1,81 @@
+/*STYLE OGÓLNE*/
+body, html {
+    text-align: center;
+    font-family: 'Robo Slab', sans-serif;
+    color: #777;
+}
+.section_header, .menu_list_items, .btn, h1, h4  {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+
+.section_subheader, #menu_logo, h2, h5 {
+    font-family: 'Droid Serif', italic;
+    color: #333;
+}
+
+/*STYLE MENU*/
+#menu {
+    background-color: rgba(255,255,255,0);
+    border: none;
+}
+
+
+/*STYLE HEADER*/
+#header {
+    background-image: url("../img/header/pictures_on_the_wall.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 35vh 0;
+}
+
+#header h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 8vh;
+}
+
+#header #header_motto {color: #fff;}
+
+#header #header_button {
+    color: #fff;
+    padding: 15px;
+}
+
+
+/*STYLE SERVICES*/
+#services {
+    height: 100%;
+    padding-top: 10%;
+}
+
+#services .section_subheader {padding-bottom: 10vh;}
+
+#services .services_items_icons_wrapper {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #5bc0de;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-size: 70px;
+    padding: 25px 0;
+}
+
+
+/*STYLE PORTFOLIO*/
+#portfolio {
+    height: 100%;
+    padding-top: 10%;
+}
+
+/*STYLE TEAM*/
+
+/*STYLE CONTACT*/
+
+/*STYLE FOOTER*/
