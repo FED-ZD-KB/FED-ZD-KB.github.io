@@ -10,4 +10,17 @@ $(document).ready(function () {
     });
 });
 
-/*MENU FONT CHANGES WITH SCROLL*/
+/*MENU FONT AND BACKGROUND CHANGES WITH SCROLL*/
+$(window).bind('mousewheel', function (e) {
+    if ($(document).scrollTop() > 200) {
+        $('#menu').css('background-color', 'rgba(255,255,255,1)');
+        $('#menu_logo').css('color', '#777');
+        $('.menu_list_items').css('color', '#777');
+    } else {
+        console.log('pozycja mniej niż 200');
+        $('#menu').css('background-color', 'rgba(255,255,255,0)');
+        $('#menu_logo').css('color', '#fff');
+        $('.menu_list_items').css('color', '#fff');
+    }
+    ;
+});

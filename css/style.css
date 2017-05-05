@@ -58,6 +58,7 @@ i {color: #fff;}
     border: none;
 }
 
+#menu_logo, #menu .menu_list_items {color: #fff;}
 
 /*STYLE HEADER*/
 #header {
