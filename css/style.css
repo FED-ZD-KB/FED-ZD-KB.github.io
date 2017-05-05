@@ -18,12 +18,39 @@ body, html {
 
 header ~ section {
     height: 100%;
-    padding-top: 5%;
+    padding: 7% 0;
 }
 
 .section_subheader {padding-bottom: 5%;}
 
 i {color: #fff;}
+
+.social_media_icons_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.social_media_icons_wrapper {
+    height: 35px;
+    width: 35px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social_media_icons {
+    margin: auto;
+    font-size: 20px;
+}
+
+.social_media_icons_wrapper:hover {
+    background-color: #5bc0de;
+    transition: all 0.2s ease-in-out;
+}
 
 /*STYLE MENU*/
 #menu {
@@ -136,7 +163,44 @@ i {color: #fff;}
 #team #team_image_2 {background-image: url('../img/team/man-2.jpg');}
 #team #team_image_3 {background-image: url('../img/team/woman-1.jpg');}
 
+#team #team_bottom_description {padding-top: 3%;}
+
 
 /*STYLE CONTACT*/
+#contact {
+    height: 100%;
+    background-image: url('../img/footer/world-map.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#contact h2, #contact h3, #contact input[type="submit"] {color: #fff;}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {font-weight: 700;}
+input::-moz-placeholder, textarea::-moz-placeholder {font-weight: 700;}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {font-weight: 700;}
+input:-moz-placeholder, textarea:-moz-placeholder {font-weight: 700;}
+
+#contact .col-md-6 input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+}
+
+#contact #input_left_column, #contact #input_right_column {
+    height: 250px;
+    margin: 30px 0;
+}
+
+#contact input[type="email"] {margin: 30px 0;}
 
 /*STYLE FOOTER*/
+#footer .copyright i {color: #777;}
+
+#footer .copyright, #footer .terms_of_use {
+    font-size: 17px;
+    padding: 16px 0 10px 0;
+}
+
+#footer p {margin: 0;}
