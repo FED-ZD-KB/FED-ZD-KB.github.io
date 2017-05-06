@@ -11,7 +11,7 @@ $(document).ready(function () {
 });
 
 /*MENU FONT AND BACKGROUND CHANGES WITH SCROLL*/
-$(window).bind('mousewheel', function (e) {
+$(window).scroll(function () {
     if ($(document).scrollTop() > 200) {
         $('#menu').css('background-color', 'rgba(255,255,255,1)');
         $('#menu_logo').css('color', '#777');
@@ -21,6 +21,5 @@ $(window).bind('mousewheel', function (e) {
         $('#menu').css('background-color', 'rgba(255,255,255,0)');
         $('#menu_logo').css('color', '#fff');
         $('.menu_list_items').css('color', '#fff');
-    }
-    ;
+    };
 });
